@@ -1,7 +1,8 @@
 import React from "react";
 
-export const Product = (product) => {
+export const Product = ({ product }) => {
   const { image, brand, size, gender, price } = product;
+
   return (
     <div className='pd-card-container vertical'>
       <div className='card-img-wrapper vertical-img'>
@@ -22,8 +23,8 @@ export const Product = (product) => {
         <div className='pd-gender'>
           <p className='crnt-price'>Size :{size}</p>
         </div>
-        <div className='pd-card-action pd-card-btn'>
-          <button>DUMMY</button>
+        <div className='pd-card-action pd-card-btn flex jc-center'>
+          <button className='btn flex'>DUMMY</button>
         </div>
       </div>
     </div>

@@ -10,7 +10,7 @@ export const useAxios = (config) => {
     (async () => {
       try {
         setLoading(true);
-        let response = await axios(config);
+        let response = await fetch(config);
         let { products } = await response.json();
         setResponse(products);
         setLoading(false);
