@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import axios from "axios";
 
 export const useAxios = (config) => {
   const [response, setResponse] = useState([]);
@@ -9,7 +10,8 @@ export const useAxios = (config) => {
     (async () => {
       try {
         setLoading(true);
-        let products = await axios(config);
+        let response = await fetch(config);
+        let { products } = await response.json();
         setResponse(products);
         setLoading(false);
       } catch (error) {
