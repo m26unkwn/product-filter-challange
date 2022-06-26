@@ -7,8 +7,6 @@ export const Products = ({ products }) => {
   const { filters } = useFilter();
 
   const filteredProducts = filterProducts(products, filters);
-  console.log(filteredProducts);
-  console.log(filters);
   return (
     <div className='products-container'>
       <div className='flex flex-wrap flex-gap jc-center'>

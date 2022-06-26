@@ -13,11 +13,9 @@ const sortByPrice = (products, value) => {
 
 const filterByCheckbbx = (products, filter, values) => {
   if (values.length > 0) {
-    let result = products.filter((product) =>
+    return products.filter((product) =>
       values.includes(product[filter].toLowerCase()),
     );
-    console.log(result);
-    return result;
   }
   return products;
 };

@@ -29,5 +29,8 @@ export const filterReducer = (state, action) => {
         brands: [],
         gender: "",
       };
+      
+    default:
+      return state;
   }
 };

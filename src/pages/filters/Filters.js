@@ -7,7 +7,7 @@ import { SortPrice } from "./components/SortPrice";
 import "./filter.css";
 
 export const Filters = () => {
-  const { filters, filterDispatch } = useFilter();
+  const { filterDispatch } = useFilter();
   const clearAllFilter = () => {
     filterDispatch({ type: "CLEAR_ALL_FILTER" });
   };

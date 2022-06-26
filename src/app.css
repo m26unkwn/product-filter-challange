@@ -21,7 +21,10 @@ body {
 }
 
 .filter-section {
-  margin-top: 1rem;
+  margin: 1rem 0;
+}
+.products-section {
+  padding-bottom: 1rem;
 }
 
 .flex-gap {

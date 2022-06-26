@@ -19,6 +19,7 @@ export const useFetch = (config) => {
         console.log(error);
       }
     })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return [response, loading, error];
