@@ -1,8 +1,9 @@
 import React from "react";
 import { Product } from "../../components";
+import { filterProducts } from "../../helper/fiter-products";
 
 export const Products = ({ products }) => {
-  console.log(products);
+ const filteredProducts = filterProducts(products,filters)
   return (
     <div className='products-container'>
       <div className='flex flex-wrap flex-gap jc-center'>
