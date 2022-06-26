@@ -12,9 +12,13 @@ export const Products = ({ products }) => {
   return (
     <div className='products-container'>
       <div className='flex flex-wrap flex-gap jc-center'>
-        {filteredProducts.map((product) => (
-          <Product key={product.id} product={product} />
-        ))}
+        {filteredProducts ? (
+          filteredProducts.map((product) => (
+            <Product key={product.id} product={product} />
+          ))
+        ) : (
+          <h1>Sorry No Product Found</h1>
+        )}
       </div>
     </div>
   );
