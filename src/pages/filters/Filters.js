@@ -1,4 +1,6 @@
 import React from "react";
+import { FilterBrand } from "./components/FilterBrand";
+import { FilterSize } from "./components/FilterSize";
 import { SortPrice } from "./components/SortPrice";
 import "./filter.css";
 
@@ -12,6 +14,9 @@ export const Filters = () => {
       <div className='filter-item-container'>
         <SortPrice />
         <div className='card-divider'></div>
+        <FilterBrand />
+        <div className='card-divider'></div>
+        <FilterSize />
       </div>
     </main>
   );
