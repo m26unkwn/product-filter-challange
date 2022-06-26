@@ -1,6 +1,7 @@
 import React from "react";
 import { FilterBrand } from "./components/FilterBrand";
 import { FilterSize } from "./components/FilterSize";
+import { SortGender } from "./components/SortGender";
 import { SortPrice } from "./components/SortPrice";
 import "./filter.css";
 
@@ -17,6 +18,8 @@ export const Filters = () => {
         <FilterBrand />
         <div className='card-divider'></div>
         <FilterSize />
+        <div className='card-divider'></div>
+        <SortGender />
       </div>
     </main>
   );

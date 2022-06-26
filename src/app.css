@@ -23,3 +23,7 @@ body {
 .filter-section {
   margin-top: 1rem;
 }
+
+.flex-gap {
+  gap: 10px;
+}
