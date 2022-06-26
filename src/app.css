@@ -13,3 +13,13 @@ body {
   font-family: "Poppins";
   background: var(--bg-color);
 }
+
+.main-product-container {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+}
+
+.filter-section {
+  margin-top: 1rem;
+}

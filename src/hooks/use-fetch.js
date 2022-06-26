@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
-export const useAxios = (config) => {
+export const useFetch = (config) => {
   const [response, setResponse] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");

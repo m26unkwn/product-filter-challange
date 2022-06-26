@@ -18,10 +18,10 @@ export const Product = ({ product }) => {
           <p className='crnt-price'>₹{price}</p>
         </div>
         <div className='pd-gender'>
-          <p className='crnt-price'>Gender :{gender}</p>
+          <p className='crnt-price'>Gender : {gender}</p>
         </div>
         <div className='pd-gender'>
-          <p className='crnt-price'>Size :{size}</p>
+          <p className='crnt-price'>Size : {size}</p>
         </div>
         <div className='pd-card-action pd-card-btn flex jc-center'>
           <button className='btn flex'>DUMMY</button>

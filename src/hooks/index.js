@@ -1,1 +1,1 @@
-export { useAxios } from "./use-axios";
+export { useFetch } from "./use-fetch";

@@ -1,0 +1,9 @@
+.header-container {
+  background: var(--primary-color);
+  padding: 1.5rem;
+}
+.header-content {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
