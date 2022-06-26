@@ -1,6 +1,6 @@
 import React from "react";
 import { Product } from "../../components";
-import { filterProducts } from "../../helper/filter-products";
+import { filterProducts } from "../../helper";
 import { useFilter } from "../../store/filter-provider";
 
 export const Products = ({ products }) => {

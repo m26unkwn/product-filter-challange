@@ -13,16 +13,18 @@ const sortByPrice = (products, value) => {
 
 const filterByCheckbbx = (products, filter, values) => {
   if (values.length > 0) {
-    return products.filter((product) =>
+    let result = products.filter((product) =>
       values.includes(product[filter].toLowerCase()),
     );
+    console.log(result);
+    return result;
   }
   return products;
 };
 
 // filter by gender
 const filterByGender = (products, value) => {
-  if (value) {
+  if (value.length > 0) {
     return products.filter((product) => product.gender.toLowerCase() === value);
   }
   return products;
@@ -31,10 +33,14 @@ const filterByGender = (products, value) => {
 export const filterProducts = (products, filters) => {
   let filteredProducts = [...products];
 
-  filteredProducts = sortByPrice(products, filters.sortByPrice);
-  filteredProducts = filterByCheckbbx(products, "brand", filters.brands);
-  filteredProducts = filterByCheckbbx(products, "size", filters.size);
-  filteredProducts = filterByGender(products, filters.gender);
+  filteredProducts = sortByPrice(filteredProducts, filters.sortByPrice);
+  filteredProducts = filterByCheckbbx(
+    filteredProducts,
+    "brand",
+    filters.brands,
+  );
+  filteredProducts = filterByCheckbbx(filteredProducts, "size", filters.size);
+  filteredProducts = filterByGender(filteredProducts, filters.gender);
 
   return filteredProducts;
 };
