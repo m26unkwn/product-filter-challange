@@ -1,6 +1,20 @@
 import React from "react";
+import { useFilter } from "../../../store/filter-provider";
 
 export const FilterSize = () => {
+  const {
+    filters: { size },
+    filterDispatch,
+  } = useFilter();
+
+  const dispatchFilterByBrands = (e, value) => {
+    if (e.target.cheked) {
+      filterDispatch({ type: "ADD_FILTER_BY_BRANDS", payload: value });
+    } else {
+      filterDispatch({ type: "REMOVE_FILTER_BY_BRANDS", payload: value });
+    }
+  };
+
   return (
     <div className='filter-size filter-item flex flex-col flex-gap'>
       <h4>Sizes</h4>

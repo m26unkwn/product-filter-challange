@@ -1,6 +1,11 @@
 import React from "react";
+import { useFilter } from "../../../store/filter-provider";
 
 export const FilterBrand = () => {
+  const { filterDispatch } = useFilter();
+
+  
+
   return (
     <div className='filter-brand filter-item flex flex-col flex-gap'>
       <h4>Brands</h4>

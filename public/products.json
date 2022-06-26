@@ -19,7 +19,7 @@
 			"id": 3,
 			"brand": "Adidas",
 			"size": "S",
-			"gender": "Woman",
+			"gender": "Female",
 			"price": 655,
 			"image": "https://rukminim1.flixcart.com/image/503/604/kmkxbww0/t-shirt/m/p/u/s-gm5190-adidas-original-imagfg58j47f3jfe.jpeg?q=50"
 		},
@@ -27,7 +27,7 @@
 			"id": 4,
 			"brand": "Adidas",
 			"size": "XL",
-			"gender": "Woman",
+			"gender": "Female",
 			"price": 899,
 			"image": "https://rukminim1.flixcart.com/image/503/604/k3ahbww0/t-shirt/m/4/9/s-eb6367-adidas-original-imafmaz6cvnefhkp.jpeg?q=50"
 		},
@@ -51,7 +51,7 @@
 			"id": 7,
 			"brand": "Spykar",
 			"size": "M",
-			"gender": "Woman",
+			"gender": "Female",
 			"price": 349,
 			"image": "https://rukminim1.flixcart.com/image/503/604/kdvzwcw0-0/t-shirt/c/n/c/s-wkt-01bj-008-deep-wine-spykar-original-imafuzzruhfgscfr.jpeg?q=50"
 		},
@@ -59,7 +59,7 @@
 			"id": 8,
 			"brand": "Spykar",
 			"size": "XL",
-			"gender": "woman",
+			"gender": "Female",
 			"price": 965,
 			"image": "https://rukminim1.flixcart.com/image/503/604/l3vxbbk0/t-shirt/t/y/5/s-wkt-01ba-013-spykar-original-imagewn5rk3wm5bd.jpeg?q=50"
 		},
@@ -75,7 +75,7 @@
 			"id": 10,
 			"brand": "Levi's",
 			"size": "M",
-			"gender": "Woman",
+			"gender": "Female",
 			"price": 447,
 			"image": "https://rukminim1.flixcart.com/image/503/604/kvtuxe80/t-shirt/i/h/6/s-23771-0248-levi-s-original-imag8ncp3erxrgmz.jpeg?q=50"
 		}

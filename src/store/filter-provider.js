@@ -14,16 +14,18 @@ const filterState = {
   gender: "",
 };
 
-const Filter = createContext(filterState);
+const FilterContext = createContext(filterState);
 
-const FilterProvider = (children) => {
+const FilterProvider = ({ children }) => {
   const [filters, filterDispatch] = useReducer(filterReducer, filterState);
 
   return (
-    <Filter.Provider value={{ filters, setFi }}>{children}</Filter.Provider>
+    <FilterContext.Provider value={{ filters, filterDispatch }}>
+      {children}
+    </FilterContext.Provider>
   );
 };
 
-const useFilter = () => useContext(Filter);
+const useFilter = () => useContext(FilterContext);
 
 export { FilterProvider, useFilter };

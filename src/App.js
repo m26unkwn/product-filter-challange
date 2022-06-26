@@ -2,7 +2,7 @@ import React from "react";
 import { useFetch } from "./hooks";
 import "./app.css";
 import { Products, Header, Filters } from "./pages";
-import { filterProducts } from "./helper/fiter-products";
+import { filterProducts } from "./helper/filter-products";
 
 export const App = () => {
   const [products, loading] = useFetch("./products.json");
